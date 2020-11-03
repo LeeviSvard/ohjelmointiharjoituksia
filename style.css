@@ -1,0 +1,86 @@
+h1{
+color:blueviolet;
+}
+body{
+background-color: #D9E8F2; 
+ color: rgb(155, 255, 240);
+front-family: Arial, Helvetica, sans-serif;
+/*front-weight: bold;/*
+/*front-weight: 800;*/
+Front-weight:normal;
+font-size: 12px;
+/*font; normal 12px Ariel, Helvetica, sans-serif */
+line-height:1.5em;
+margin:0;
+}
+.sisalto1{
+background-color: #FBB5F7;
+padding:10px;
+border-width: 5px;
+border-style:double;
+}
+.sisalto1{
+  front-family:tahoma;
+  text-decoration: underline;
+}
+.alue1{
+width: 70%;
+
+/*margin-top:25px;
+margin-bottom:15px;  
+margin-left:15px;  
+margin-right:15px;  
+*/
+/*Margin: 25px 15px 25px 15px; */
+margin: auto;
+}
+ .linkkilista {
+ border:1px #166807 solid;}
+.linkkilista h2{
+  margin-top: 10px;
+text-align:center;
+}
+.linkkilista ul{
+  list-style-type: none;
+}
+a{
+text-decoration:none;
+color: black;
+}
+a.hover{
+color:green
+}
+a:active{
+  color:aqua;
+}
+.linkkilista li{
+  border-bottom:dotted 1px black;
+}
+.yhteydenotto label{
+  display: block;
+}
+.yhteydenotto input {type="text"}, yhteydenotto textare{
+padding:10px;
+width:100%;
+}
+.nappula{
+  background: black;
+  color:white;
+  padding: 10px;
+  border:none;
+}
+.nappula:hover{
+  background-color: royalblue;
+  Color: White;
+} 
+.laatikko1{
+  float: left;
+  width:33%;
+  border:2px solid white;
+  padding: 10px;
+  }
+  .asemointi{
+  position: fixed;
+  top: 100px;
+  left 0px;  
+  }
