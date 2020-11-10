@@ -1,8 +1,11 @@
 // alert("Täällä ollaan");
-// console.log("Täällä ollaan");
+//muuttujat: let tai const;
 
-  //muuttujat: let tai const;
+function laskutehtava(ekaNumero, tokaNumero){
+  return (ekaNumero + tokaNumero);
+} 
 
+ console.log("Täällä ollaan");
   let ika = 17;
   
   ika = ika + 1;
@@ -95,9 +98,37 @@ for(let i=0; i<laksyt.length; i++){
   console.log(laksyt[i].tehtava);
 }
 
-const laksytTehtava = laksyt.map(function(laksyt){
+const laksytTehtava = laksyt.map(function(laksy){
+  return laksy.tehtava;
   
-  return laksyt.tehtava;
 });
 
   console.log(laksytTehtava);
+
+  console.log('------------');
+
+const tehtavaTehty = laksyt.filter(function(laksy){
+  return laksy.tehty ===false;
+});
+console.log(tehtavaTehty);
+
+const numero = 6;
+const nimi ="jorma";
+
+if(numero < 18){
+  console.log('Olet alaikäinen tai jorma ')
+}else if(numero === 18){
+  console.log('Olet juuri täyttänyt 18!')
+}
+else{
+console.log('Olet täysi-ikäinen');
+}
+
+const access= numero > 18 ? "granted" : "denied";
+
+console.log(access);
+
+function laskutehtava(){
+
+} 
+console.log(laskutehtava(5, 2));
