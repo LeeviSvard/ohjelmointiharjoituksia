@@ -83,4 +83,58 @@ width:100%;
   position: fixed;
   top: 100px;
   left 0px;  
-  }
+  }))
+
+*{margin:0;
+padding:0;
+}
+ul{
+  list-style-type: squarenone;
+}
+ul li{
+  padding:5px;
+  background:#15FF00;
+  margin: 5px 0;
+}
+header{
+  background: rgb(245, 245, 245);
+  padding: 10px;
+  text-align: center;
+}
+#opiskelija-lomake{
+  background: #FF001E;
+  padding:15px;
+}
+#opiskelija-lomake input[type='text']{
+  width:100%;
+  padding: 8px;
+  margin-bottom:10px;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+}
+.kurssinappi{
+  display: block;
+  width:100%;
+  padding:10px 15px;
+  border:0px;
+  background:#9ca796;
+  color:black;
+  border-radius:5px;
+  margin:5px 0;
+}
+.merkinta:hover{
+  background:#FF001E
+;
+}
+.lomake-alue{
+  padding:10px 15;
+  width:70%;
+  margin:auto;
+}
+.virhe{
+  background: #FF001E;
+  color: #d6d6d6;
+  padding: 10px;
+  margin:10px;
+}
