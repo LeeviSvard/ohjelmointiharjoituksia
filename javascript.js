@@ -1,6 +1,5 @@
-// alert("Täällä ollaan");
+//alert("Täällä ollaan");
 //muuttujat: let tai const;
-
 function laskutehtava(ekaNumero, tokaNumero) {
   return (ekaNumero + tokaNumero);
 }
@@ -131,34 +130,29 @@ function laskutehtava() {
 }
 console.log(laskutehtava(5, 2));
 
-
 const kurssinOsat = document.querySelectorAll('.sisalto');
 
 kurssinOsat.forEach((osa) => console.log(osa));
 
 const ul = document.querySelector('.kurssi');
 
-const kurssinappi = document.querySelector('.kurssinappi')
-const nimiSisalto = document.querySelect or('#nimi');
+const kurssinappi = document.querySelector('.kurssinappi');
+const nimiSisalto = document.querySelector('#nimi');
 const asiaSisalto = document.querySelector('#tieto');
 const virhe = document.querySelector('.virheilmoitus');
 const viesti = document.querySelector('#tiedot');
 
-kurssinappi.addEventListener('click', e => {
-  e.preventDefault();
-
+kurssinappi.addEventListener('click', e => { e.preventDefault();
 
   if (nimiSisalto.value === '' || asiaSisalto.value === '') {
     virhe.classList.add('virhe')
     virhe.innerHTML = 'Täytä kaikki kentät';
     kurssinappi.style.background = 'red';
     kurssinappi.value = 'Virhe, en lisännyt tietoa.';
-    setTimeout(()=> virhe.remove(), 3000);
-    setTimeout(()=> kurssinappi.style.background=rbg(245, 245, 245), 3000);
-    setTimeout(()=> kurssinappi.value = 'Lisää tieto', 3000);
+    setTimeout(() => virhe.remove(), 3000);
+    setTimeout(() => kurssinappi.style.background = rbg(245, 245, 245), 3000);
+    setTimeout(() => kurssinappi.value = 'Lisää tieto', 3000);
   } else {
-    kurssinappi.style.background = 'red';
-    kurssinappi.value = 'virhe, en lisännyt tietoa';
     const li = document.createElement('li');
 
 
@@ -171,4 +165,30 @@ kurssinappi.addEventListener('click', e => {
   }
 });
 
-const 
+const merkitsevalmiit= document.querySelector ('.merkinta');
+merkitsevalmiit.addEventListener('click', e => {
+  e.preventDefault();
+  
+if(document.querySelector('#tehta').checked){
+  ul.children[0].innerHTML = '<input type="checkbox" id ="tehta" checked> HTML tunnit pidetty';
+}else{
+ ul.children[0].innerHTML = '<input type="checkbox" id ="tehta" > HTML';
+}
+if(document.querySelector('#tehtb').checked){
+  ul.children[1].innerHTML = '<input type="checkbox" id ="tehtb" checked>  css tunnit pidetty';
+} else{
+   ul.children[1].innerHTML = '<input type="checkbox" id ="tehtb" >  css ';
+}
+if(document.querySelector('#tehtc').checked){
+  ul.children[2].innerHTML = '<input type="checkbox" id ="tehtc" checked> script tunnit pidetty';
+}else{
+   ul.children[2].innerHTML = '<input type="checkbox" id ="tehtc" > script';
+}
+if(document.querySelector('#tehtd').checked){
+  ul.children[3].innerHTML =  '<input type="checkbox" id ="tehtd" checked> ci cd tunnit pidetty';
+} else{
+  ul.children[3].innerHTML = '<input type="checkbox" id ="tehtd" > ci cd';
+}
+});
+
+
