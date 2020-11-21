@@ -28,7 +28,7 @@ console.log('nimeni on ' + etunimi + ' ' + sukunimi + ' ja syntymävuoteni on ' 
 
 const henkilotiedot = (`Nimeni on ${etunimi} ${sukunimi} ja syntymävuoteni on ${syntymavuosi}`);
 
-console.log(henkilotiedot)
+console.log(henkilotiedot);
 
 console.log(`henkilotiedot pituus on: ${henkilotiedot.lenght}`);
 
@@ -53,6 +53,7 @@ autoja.pop();
 console.log(autoja);
 
 const opiskelija = {
+  id:1,
   etunimi: 'leevi',
   sukunimi: 'Svärd',
   syntymavuosi: '2003',
@@ -103,12 +104,6 @@ const laksytTehtava = laksyt.map(function (laksy) {
 
 console.log(laksytTehtava);
 
-console.log('------------');
-
-const tehtavaTehty = laksyt.filter(function (laksy) {
-  return laksy.tehty === false;
-});
-console.log(tehtavaTehty);
 
 const numero = 6;
 const nimi = "jorma";
@@ -123,11 +118,8 @@ else {
 }
 
 const access = numero > 18 ? "granted" : "denied";
-
 console.log(access);
 
-function laskutehtava() {
-}
 console.log(laskutehtava(5, 2));
 
 const kurssinOsat = document.querySelectorAll('.sisalto');
@@ -135,7 +127,6 @@ const kurssinOsat = document.querySelectorAll('.sisalto');
 kurssinOsat.forEach((osa) => console.log(osa));
 
 const ul = document.querySelector('.kurssi');
-
 const kurssinappi = document.querySelector('.kurssinappi');
 const nimiSisalto = document.querySelector('#nimi');
 const asiaSisalto = document.querySelector('#tieto');

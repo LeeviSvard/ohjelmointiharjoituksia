@@ -1,15 +1,17 @@
 h1{
 color:blueviolet;
 }
+h2{
+color:blueviolet;
+}
 body{
 background-color: #D9E8F2; 
- color: rgb(155, 255, 240);
+ color: #166807;
 front-family: Arial, Helvetica, sans-serif;
 /*front-weight: bold;/*
 /*front-weight: 800;*/
 Front-weight:normal;
 font-size: 12px;
-/*font; normal 12px Ariel, Helvetica, sans-serif */
 line-height:1.5em;
 margin:0;
 }
@@ -98,33 +100,33 @@ a:active{
   left 0px;  
   }))
 
-*{margin:0;
-padding:0;
+*{
+  margin:0;
+  padding:0;
 }
 ul{
-  list-style-type: squarenone;
+  list-style: none;
 }
 ul li{
   padding:5px;
   background:#15FF00;
-  margin: 5px 0;
+  margin:5px 0;
 }
 header{
-  background: rgb(245, 245, 245);
+  background:rgb(245, 245, 245);
   padding: 10px;
-  text-align: center;
+  text-align:center;
 }
 #opiskelija-lomake{
-  background: #FF001E;
+  background: black;
   padding:15px;
 }
 #opiskelija-lomake input[type='text']{
   width:100%;
-  padding: 8px;
+  padding:8px;
   margin-bottom:10px;
   border-radius:5px;
   border:1px solid #ccc;
-}
 }
 .kurssinappi{
   display: block;
@@ -136,11 +138,24 @@ header{
   border-radius:5px;
   margin:5px 0;
 }
+.kurssinappi:hover{
+  background: white;
+}
+.merkinta{
+  display: block;
+  width:100%;
+  padding:10px 15px;
+  border:0px;
+  background:#9ca796;
+  color:blue;
+  border-radius:5px;
+  margin:5px 0;
+}
 .merkinta:hover{
   background:#FF001E;
 }
 .lomake-alue{
-  padding:10px 15;
+  padding:10px 15px;
   width:70%;
   margin:auto;
 }
