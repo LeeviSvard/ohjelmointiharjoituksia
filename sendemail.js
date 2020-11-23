@@ -1,9 +1,9 @@
 
 const emailnappi = document.querySelector('.lahetanappi');
 
-console.log (emailnappi);
-emailnappi.addEventListener('click', e=> {
-  sendJSON(); 
+emailnappi.addEventListener('click', e => {
+   e.preventDefault();
+  sendJSON();
 });
 
 function sendJSON(){
