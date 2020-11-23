@@ -1,35 +1,34 @@
 <html>
   <head>  
     <title>
-      Lähetä viesti
+      Sähköpostin viesti
     </title>
     <link rel="stylestreet" href="style.css"
-</head>
-<body>
-  <header>
-    <h1>
-      Lähetä viesti
-    </h1>
-  </header>
-  <div>
-    <div class"lomake-alue">
-      <form id="opiskelia-lomake">
-      <div>
-      <label>Nimi: </label>
-      <input type="text" id="nimi"> 
-  </div>
-<div>
-      <label>Email: </label>
-      <input type="text" id="email"> 
-  </div>
-<div>
-      <label>Viesti: </label>
-     <textarea></textarea>
-</div>
-  <div>
-<input type='submit' class='lahetanappi' value='lähetä'>
-</div>
-  </form>
-  <script src="sendemail.js"></script>
-</body>
+  </head>
+  <body>
+   <header>
+    <h1> Tehtävä </h1>
+   </header>
+
+  <div class="lomake-alue">
+      <form id="opiskelija-lomake">
+        <h1>Lähetä viesti</h1>
+        <div class="virheilmoitus"></div>
+        <div>
+          <label>Nimi: </label>
+          <input type="text" id="nimi">
+        </div>
+        <div>
+          <label>Email: </label>
+          <input type="text" id="email">
+        </div>
+        <div>
+          <label>Viesti: </label>
+          <textarea></textarea>
+        </div>
+        <input class="lahetanappi" type="submit" value="Lähetä">
+      </form>
+    </div>
+    <script src="scriptEmail.js"></script>
+  </body>
 </html>
