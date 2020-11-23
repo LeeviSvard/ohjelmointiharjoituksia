@@ -16,10 +16,10 @@ function sendJSON(){
     xhr.setRequestHeader("Content-Type", "application/json"); 
 
     xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status == 200) {
-    console.log ("valmis, yhteys toimii");
-    }
-
+        if (xhr.readyState === 4 && xhr.status == 200) {
+        console.log ("valmis, yhteys toimii");
+        }
+   }; 
     var data = JSON.stringify({
       "EmailMsg": "viesti",
       "EmailAddress": "formtrigger@salpaus.fi",
