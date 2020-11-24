@@ -21,7 +21,7 @@ function sendJSON(){
    }; 
     var data = JSON.stringify({
       "EmailMsg": "viesti",
-      "EmailAddress": "formtrigger@salpaus.fi",
+      "EmailAddress": "mira.vorne@salpaus.fi",
       "EmailTo": "leevi.svard@gmail.com",
       "EmailName": "Tyyppi Testaa"
     }); 
