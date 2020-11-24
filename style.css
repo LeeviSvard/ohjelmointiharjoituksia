@@ -24,7 +24,7 @@ border-top-style:dotted;
 border-bottom-style:solid;
 }
 .sisalto1 h1{
-  front-family:tahoma;
+  font-family:tahoma;
   text-decoration:underline;
   text-transform:uppercase;
   letter-spacing: 0,5em;
@@ -97,8 +97,8 @@ a:active{
   .asemointi{
   position:fixed;
   top: 100px;
-  left 0px;  
-  }))
+  left: 0px;  
+  }
 
 *{
   margin:0;

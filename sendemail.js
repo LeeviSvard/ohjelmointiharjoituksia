@@ -6,7 +6,7 @@ emailnappi.addEventListener('click', e => {
   sendJSON();
 });
 
-function sendJSON(){
+  function sendJSON(){
     let zhr = new XMLHttpRequest();
     let url = "https://salpausemail.azurewebsites.net/api/HttpTriggerCSharp1?code=lWOELqiU07AqsBviOQYzuNIrQP7xoV7NV7C5W2ctgjIRcf7nXE2biw==";
     xhr.open('POST', url, true);

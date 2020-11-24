@@ -140,23 +140,21 @@ kurssinappi.addEventListener('click', e => { e.preventDefault();
     virhe.innerHTML = 'Täytä kaikki kentät';
     kurssinappi.style.background = 'red';
     kurssinappi.value = 'Virhe, en lisännyt tietoa.';
-    setTimeout(() => virhe.remove(), 3000);
-    setTimeout(() => kurssinappi.style.background = rbg(245, 245, 245), 3000);
+    setTimeout(() => virhe.innerHTML='', 3000);
+    setTimeout(() => virhe.style.background= 'black', 3000);
+    setTimeout(() => kurssinappi.style.background = 'rgb(245, 245, 245)', 3000);
     setTimeout(() => kurssinappi.value = 'Lisää tieto', 3000);
-  } else {
+  }else{
     const li = document.createElement('li');
-
-
     li.appendChild(document.createTextNode(`${nimiSisalto.value} : ${asiaSisalto.value}`));
-
     viesti.appendChild(li);
-
     nimiSisalto.value = '';
     asiaSisalto.value = '';
   }
 });
 
 const merkitsevalmiit= document.querySelector ('.merkinta');
+
 merkitsevalmiit.addEventListener('click', e => {
   e.preventDefault();
   
