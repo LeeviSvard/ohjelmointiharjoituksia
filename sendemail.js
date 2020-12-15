@@ -18,6 +18,7 @@ emailnappi.addEventListener('click', e => {
         console.log ("valmis, yhteys toimii");
         }
    }; 
+    
     var data = JSON.stringify({
       "EmailMsg": "viesti",
       "EmailAddress": "mira.vorne@salpaus.fi",
